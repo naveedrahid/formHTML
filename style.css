@@ -1,0 +1,87 @@
+.required{
+    color:#ff1244;
+}
+.checkBoxWrap {
+    display: flex;
+}
+
+.checkBoxWrap .checkBox input[type='checkbox']{
+    width: 15px;
+    margin-left:unset;
+    height: 15px;
+    position: unset !important;
+}
+.checkBoxGroup .checkBoxWrap .checkBox {
+    width: 100%;
+}
+.checkBoxWrap 
+ label.fieldRq {
+    margin-bottom: 0 !important;
+    line-height: 0;
+    display: inline;
+    margin-left: 5px;
+}
+input.form-control:focus {
+    box-shadow: inset #00000038 0px 0px 5px 0px;
+    border-color: red;
+}
+
+input.form-control {
+    border-color: #000;
+}
+.divider {
+    border-top: solid;
+}
+.checkBoxWrap ul.checkBox {
+    list-style: none;
+    padding:0;
+}
+.checkBoxWrap.ulCheck {
+    justify-content: space-between;
+}
+.checkBox.Approx {
+    width: 100%;
+}
+
+.checkBox.Approx input[type='checkbox'] {
+    display: inline;
+}
+.Sqft input {
+    margin-right: 10px;
+}
+
+.Sqft p {
+    margin: 0px 20px 0px 0px;
+}
+
+.Sqft {
+    display: flex;
+    align-items: center;
+}
+.form-row {
+    margin-bottom: 20px;
+}
+
+textarea.form-control {
+    border-color: #000;
+    resize: none;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
