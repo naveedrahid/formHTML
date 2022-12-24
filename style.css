@@ -4,8 +4,28 @@
 .checkBoxWrap {
     display: flex;
 }
-
-.checkBoxWrap .checkBox input[type='checkbox']{
+.checkBox {
+    margin-left: 10px;
+}
+.label {
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+ul.ulUnstle {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+ul.ulFlex {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.checkBoxWrap .checkBox input[type='checkbox'],
+.ulFlex input[type='checkbox']{
     width: 15px;
     margin-left:unset;
     height: 15px;

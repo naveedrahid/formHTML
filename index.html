@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -3221,7 +3220,7 @@
                 </div>
                 <div class="form-group col-md-6 form-group col-xs-12">
                     <p class="required">*Compensation Based On</p>
-                    <div class="checkBoxWrap">
+                    <div class="checkBoxWrap ulCheck">
                         <div class="checkBox">
                             <input type="checkbox" id="cc_grossfull_sale_price" name="cc_compensation_based_on" value="Gross/Full Sale Price" class="form-check-input">
                             <label class="fieldRq">Gross/Full Sale Price</label>
@@ -3259,7 +3258,7 @@
                 </div>
                 <div class="form-group col-md-6 col-xs-12">
                     <p class="required">*Lender Owned</p>
-                    <div class="checkBoxWrap">
+                    <div class="checkBoxWrap ulCheck">
                         <div class="checkBox">
                             <input type="checkbox" id="cc_yes_lender_owned" name="cc_lender_owned" value="yes">
                             <label class="fieldRq">Yes</label>
@@ -3276,7 +3275,7 @@
                 </div>
                 <div class="form-group col-md-6 col-xs-12">
                     <p class="required">*Short Sale With Lender Approval Required</p>
-                    <div class="checkBoxWrap">
+                    <div class="checkBoxWrap ulCheck">
                         <div class="checkBox">
                             <input type="checkbox" id="cc_yes_lender_approval" name="cc_short_sale_with_lender_approval_required" value="yes" class="form-check-input">
                             <label class="fieldRq">Yes</label>
@@ -3328,10 +3327,1099 @@
                     <input type="text" name="cc_high_chool" id="cc_high_chool" class="form-control">
                 </div>
             </div>
+            <div class="form-row">
+                <div class="form-group col-md-4 col-xs-12">
+                    <label class="required">*Taxes $ </label>
+                    <input type="text" name="cc_taxes" id="cc_taxes" class="form-control">
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label class="required">*Fiscal Year</label>
+                    <input type="text" name="cc_fiscal_year" id="cc_fiscal_year" class="form-control">
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label class="required">*Assessed Value $</label>
+                    <input type="text" name="cc_assessed_value" id="cc_assessed_value" class="form-control">
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label class="required">*Specific Zoning Code</label>
+                    <input type="text" name="cc_specific_zoningcode" id="cc_specific_zoningcode" class="form-control">
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label class="required">*Book</label>
+                    <input type="text" name="cc_book" id="cc_book" class="form-control">
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label class="required">*Page</label>
+                    <input type="text" name="cc_page" id="cc_page" class="form-control">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6 form-group col-xs-12">
+                    <p class="required">*Type of CC <small>(choose only one)</small></p>
+                    <div class="checkBoxWrap ulCheck">
+                        <div class="checkBox">
+                            <input type="checkbox" name="cc_condo" value="Condo" class="form-check-input">
+                            <label class="fieldRq">Condo</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" name="cc_co-op" value="Co-op" class="form-check-input">
+                            <label class="fieldRq">Co-op</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" name="cc_condex" value="Condex" class="form-check-input">
+                            <label class="fieldRq">Condex</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 form-group col-xs-12">
+                    <p>Unit Placement</p>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="cc_unit_placement" value="A - Below Grade"><label class="label">A - Below Grade</label></li>
+                            <li><input type="checkbox" name="cc_unit_placement" value="B - Street"><label class="label">B - Street</label></li>
+                            <li><input type="checkbox" name="cc_unit_placement" value="C - Upper "><label class="label">C - Upper </label></li>
+                            <li><input type="checkbox" name="cc_unit_placement" value="D - Top/Penthouse"><label class="label">D - Top/Penthouse</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="cc_unit_placement" value="E - End"><label class="label">E - End</label></li>
+                            <li><input type="checkbox" name="cc_unit_placement" value="F - Middle "><label class="label">F - Middle </label></li>
+                            <li><input type="checkbox" name="cc_unit_placement" value="G - Corner"><label class="label">G - Corner</label></li>
+                            <li><input type="checkbox" name="cc_unit_placement" value="H - Front "><label class="label">H - Front </label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="cc_unit_placement" value="I - Back"><label class="label">I - Back</label></li>
+                            <li><input type="checkbox" name="cc_unit_placement" value="J - Ground"><label class="label">J - Ground</label></li>
+                            <li><input type="checkbox" name="cc_unit_placement" value="K - Lower Level"><label class="label">K - Lower Level</label></li>
+                            <li><input type="checkbox" name="cc_unit_placement" value="L - Partially Below Grade"><label class="label">L - Partially Below Grade</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="cc_unit_placement" value="M - Walkout"><label class="label">M - Walkout</label></li>
+                            <li><input type="checkbox" name="cc_unit_placement" value="N - Courtyard"><label class="label">N - Courtyard</label></li>
+                            <li><input type="checkbox" name="cc_unit_placement" value="O - Garden"><label class="label">O - Garden</label></li> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label class="required">*Unit Level</label>
+                    <input type="text" name="cc_unit_level" class="form-control">
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label class="required">*# Units in Complex</label>
+                    <input type="text" name="cc_units_in_omplex" class="form-control">
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label># Units Owner Occupied </label>
+                    <input type="text" name="cc_units_owner_occupied" class="form-control">
+                </div>
+                <div class="form-group col-md-6 col-xs-12">
+                    <label># Units Owner Occupied Source</label>
+                    <input type="text" name="cc_units_owner_occupied_source" class="form-control">
+                </div>
+                <div class="form-group col-md-6 col-xs-12">
+                    <label>*Levels in Unit</label>
+                    <input type="text" name="cc_levels_in_unit" class="form-control">
+                </div>
+                <div class="form-group col-md-3 col-xs-12">
+                    <label class="label">Complex Complete </label>
+                    <ul class="checkBox ulUnstle">
+                        <li><input type="checkbox" name="cc_complex_omplete" value="yes"><label class="label">yes</label></li>
+                        <li><input type="checkbox" name="cc_complex_omplete" value="no"><label class="label">no</label></li>
+                        <li><input type="checkbox" name="cc_complex_omplete" value="Unknown"><label class="label">Unknown</label></li>
+                        <li><input type="checkbox" name="cc_complex_omplete" value="Unspecified"><label class="label">Unspecified</label></li>
+                    </ul>
+                </div>
+                <div class="form-group col-md-3 col-xs-12">
+                    <label class="label">Year Round </label>
+                        <ul class="checkBox ulUnstle">
+                            <li><input type="checkbox" name="cc_year_round" value="yes"><label class="label">yes</label></li>
+                            <li><input type="checkbox" name="cc_year_round" value="no"><label class="label">no</label></li>
+                            <li><input type="checkbox" name="cc_year_round" value="Unknown"><label class="label">Unknown</label></li>
+                            <li><input type="checkbox" name="cc_year_round" value="Unspecified"><label class="label">Unspecified</label></li>
+                        </ul>
+                </div>
+                <div class="form-group col-md-3 col-xs-12">
+                    <label class="label">Elevator</label>
+                        <ul class="checkBox ulUnstle">
+                            <li><input type="checkbox" name="cc_elevator" value="yes"><label class="label">yes</label></li>
+                            <li><input type="checkbox" name="cc_elevator" value="no"><label class="label">no</label></li>
+                            <li><input type="checkbox" name="cc_elevator" value="Unknown"><label class="label">Unknown</label></li>
+                            <li><input type="checkbox" name="cc_elevator" value="Unspecified"><label class="label">Unspecified</label></li>
+                        </ul>
+                </div>
+                <div class="form-group col-md-3 col-xs-12">
+                    <label class="required">*Special Assessments</label>
+                        <ul class="checkBox ulUnstle">
+                            <li><input type="checkbox" name="cc_special_assessments" value="yes"><label class="label">yes</label></li>
+                            <li><input type="checkbox" name="cc_special_assessments" value="no"><label class="label">no</label></li>
+                            <li><input type="checkbox" name="cc_special_assessments" value="Unknown"><label class="label">Unknown</label></li>
+                        </ul>
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <label class="required">*Special Assessments $</label>
+                    <input type="text" name="cc_special_assessments" class="form-control">
+                    <label class="required my-2">*Special Assessment Disclosure (Max. 200 Characters)</label>
+                    <textarea name="cc_special_assessment_disclosure"class="form-control"></textarea>
+                </div>
+                <div class="form-group col-md-6 col-xs-12">
+                    <label class="required">*Condo Association </label>
+                    <div class="checkBoxWrap ">
+                        <div class="checkBox">
+                            <input type="checkbox" name="sf_yes" value="Yes" class="form-check-input">
+                            <label class="fieldRq">Yes</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" name="cc_no" value="No" class="form-check-input">
+                            <label class="fieldRq">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-6 col-xs-12">
+                    <label class="required">*Association Fee</label>
+                    <input type="text" name="cc_association_fee" class="form-control">
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <label>Fee Interval </label>
+                    <ul class="ulFlex">
+                        <li><input type="checkbox" name="cc_fee_interval" value="Monthly"><label class="label">Monthly</label></li>
+                        <li><input type="checkbox" name="cc_fee_interval" value="Yearly"><label class="label">Yearly</label></li>
+                        <li><input type="checkbox" name="cc_fee_interval" value="Quarterly"><label class="label">Quarterly</label></li>
+                        <li><input type="checkbox" name="cc_fee_interval" value="Unknown"><label class="label">Unknown</label></li>
+                        <li><input type="checkbox" name="cc_fee_interval" value="Unspecified"><label class="label">Unspecified</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12 col-xs-12">
+                    <label class="required">Association Fee Includes</label>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="A- Heat"><label class="label">A- Heat</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="B- Hot Water"><label class="label">B- Hot Water</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="C- Electric"><label class="label">C- Electric</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="D- Gas"><label class="label">D- Gas</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="E- Water"><label class="label">E- Water</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="F- Sewer"><label class="label">F- Sewer</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="G- Master Insurance"><label class="label">G- Master Insurance</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="H- Security"><label class="label">H- Security</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="I- Swimming Pool"><label class="label">I- Swimming Pool</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="J- Laundry Facilities"><label class="label">J- Laundry Facilities</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="K- Elevator"><label class="label">K- Elevator</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="L- Exterior Maintenance"><label class="label">L- Exterior Maintenance</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="M- Road Maintenance"><label class="label">M- Road Maintenance</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="N- Landscaping"><label class="label">N- Landscaping</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="O- Snow Removal"><label class="label">O- Snow Removal</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="P- Golf Course"><label class="label">P- Golf Course</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="Q- Putting Green"><label class="label">Q- Putting Green</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="R- Tennis Court"><label class="label">R- Tennis Court</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="S- Playground"><label class="label">S- Playground</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="T- Park"><label class="label">T- Park</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="U- Recreational Facilities"><label class="label">U- Recreational Facilities</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="V- Paddle Tennis"><label class="label">V- Paddle Tennis</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="W- Exercise Room"><label class="label">W- Exercise Room</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="X- Sauna/Steam"><label class="label">X- Sauna/Steam</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="Y- Clubroom"><label class="label">Y- Clubroom</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="Z- Walking/Jogging Trails"><label class="label">Z- Walking/Jogging Trails</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="1- Beach Rights"><label class="label">1- Beach Rights</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="2- Dock/Mooring"><label class="label">2- Dock/Mooring</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="3- Extra Storage"><label class="label">3- Extra Storage</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="4- Refuse Removal"><label class="label">4- Refuse Removal</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="5- Garden Area"><label class="label">5- Garden Area</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="6- Valet Parking"><label class="label">6- Valet Parking</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="7- N/A"><label class="label">7- N/A</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="8- Air Conditioning"><label class="label">8- Air Conditioning</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="9- Clubhouse"><label class="label">9- Clubhouse</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="10- Reserve Funds"><label class="label">10- Reserve Funds</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="11- Flood Insurance"><label class="label">11- Flood Insurance</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="12- Property Taxes"><label class="label">12- Property Taxes</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="13- Management Fee"><label class="label">13- Management Fee</label></li>
+                            <li><input type="checkbox" name="cc_association_fee_includes" value="14- Additional Parking Space"><label class="label">14- Additional Parking Space</label></li> 
+                        </ul>
+                    </div>
+                    <label class="label">Optional Services Fee</label>
+                    <input type="text" name="cc_optional_services_fee" class="form-control">
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <label class="required">Optional Fee Includes</label>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="A- Heat"><label class="label">A- Heat</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="B- Hot Water"><label class="label">B- Hot Water</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="C- Electric"><label class="label">C- Electric</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="D- Gas"><label class="label">D- Gas</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="E- Water"><label class="label">E- Water</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="F- Sewer"><label class="label">F- Sewer</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="G- Master Insurance"><label class="label">G- Master Insurance</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="H- Security"><label class="label">H- Security</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="I- Swimming Pool"><label class="label">I- Swimming Pool</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="J- Laundry Facilities"><label class="label">J- Laundry Facilities</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="K- Elevator"><label class="label">K- Elevator</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="L- Exterior Maintenance"><label class="label">L- Exterior Maintenance</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="M- Road Maintenance"><label class="label">M- Road Maintenance</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="N- Landscaping"><label class="label">N- Landscaping</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="O- Snow Removal"><label class="label">O- Snow Removal</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="P- Golf Course"><label class="label">P- Golf Course</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="Q- Putting Green"><label class="label">Q- Putting Green</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="R- Tennis Court"><label class="label">R- Tennis Court</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="S- Playground"><label class="label">S- Playground</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="T- Park"><label class="label">T- Park</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="U- Recreational Facilities"><label class="label">U- Recreational Facilities</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="V- Paddle Tennis"><label class="label">V- Paddle Tennis</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="W- Exercise Room"><label class="label">W- Exercise Room</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="X- Sauna/Steam"><label class="label">X- Sauna/Steam</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="Y- Clubroom"><label class="label">Y- Clubroom</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="Z- Walking/Jogging Trails"><label class="label">Z- Walking/Jogging Trails</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="1- Beach Rights"><label class="label">1- Beach Rights</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="2- Dock/Mooring"><label class="label">2- Dock/Mooring</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="3- Extra Storage"><label class="label">3- Extra Storage</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="4- Refuse Removal"><label class="label">4- Refuse Removal</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="5- Garden Area"><label class="label">5- Garden Area</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="6- Valet Parking"><label class="label">6- Valet Parking</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="7- Air Conditioning"><label class="label">7- Air Conditioning</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="8- Reserve Funds"><label class="label">8- Reserve Funds</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="9- Clubhouse"><label class="label">9- Clubhouse</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="10- Flood Insurance"><label class="label">10- Flood Insurance</label></li>
+                            <li><input type="checkbox" name="cc_optional_fee_includes" value="11- Additional Parking Space"><label class="label">11- Additional Parking Space</label></li> 
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12 col-xs-12">
+                    <label class="label">Other Required Fee</label>
+                    <input type="text" name="cc_otherr_required_fee" class="form-control">
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <label class="label">Other Required Fee</label>
+                    <input type="text" name="cc_otherr_required_fee" class="form-control">
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <label class="required">Other Required Fee Includes </label>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="A- Heat"><label class="label">A- Heat</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="B- Hot Water"><label class="label">B- Hot Water</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="C- Electric"><label class="label">C- Electric</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="D- Gas"><label class="label">D- Gas</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="E- Water"><label class="label">E- Water</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="F- Sewer"><label class="label">F- Sewer</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="G- Master Insurance"><label class="label">G- Master Insurance</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="H- Security"><label class="label">H- Security</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="I- Swimming Pool"><label class="label">I- Swimming Pool</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="J- Laundry Facilities"><label class="label">J- Laundry Facilities</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="K- Elevator"><label class="label">K- Elevator</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="L- Exterior Maintenance"><label class="label">L- Exterior Maintenance</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="M- Road Maintenance"><label class="label">M- Road Maintenance</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="N- Landscaping"><label class="label">N- Landscaping</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="O- Snow Removal"><label class="label">O- Snow Removal</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="P- Golf Course"><label class="label">P- Golf Course</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="Q- Putting Green"><label class="label">Q- Putting Green</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="R- Tennis Court"><label class="label">R- Tennis Court</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="S- Playground"><label class="label">S- Playground</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="T- Park"><label class="label">T- Park</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="U- Recreational Facilities"><label class="label">U- Recreational Facilities</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="V- Paddle Tennis"><label class="label">V- Paddle Tennis</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="W- Exercise Room"><label class="label">W- Exercise Room</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="X- Sauna/Steam"><label class="label">X- Sauna/Steam</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="Y- Clubroom"><label class="label">Y- Clubroom</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="Z- Walking/Jogging Trails"><label class="label">Z- Walking/Jogging Trails</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="1- Beach Rights"><label class="label">1- Beach Rights</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="2- Dock/Mooring"><label class="label">2- Dock/Mooring</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="3- Extra Storage"><label class="label">3- Extra Storage</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="4- Refuse Removal"><label class="label">4- Refuse Removal</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="5- Garden Area"><label class="label">5- Garden Area</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="6- Valet Parking"><label class="label">6- Valet Parking</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="12- Management Fee"><label class="label">12- Management Fee</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="7- Air Conditioning"><label class="label">7- Air Conditioning</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="8- Reserve Funds"><label class="label">8- Reserve Funds</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="9- Clubhouse"><label class="label">9- Clubhouse</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="10- Flood Insurance"><label class="label">10- Flood Insurance</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="11- Property Taxes"><label class="label">11- Property Taxes</label></li>
+                            <li><input type="checkbox" name="cc_other_required_fee_includes" value="13- Additional Parking Space"><label class="label">13- Additional Parking Space</label></li> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label>Management</label>
+                    <ul class="checkBox ulUnstle">
+                        <li><input type="checkbox" name="cc_management" value="A- Professional—On-Site "><label class="label">A- Professional—On-Site
+                            </label></li>
+                        <li><input type="checkbox" name="cc_management" value="B- Professional—Off-Site"><label class="label">B-
+                                Professional—Off-Site</label></li>
+                        <li><input type="checkbox" name="cc_management" value="C- Developer Control "><label class="label">C- Developer Control
+                            </label></li>
+                        <li><input type="checkbox" name="cc_management" value="D- Owner Association"><label class="label">D- Owner Association</label>
+                        </li>
+                        <li><input type="checkbox" name="cc_management" value="E- Developer Advisory Board"><label class="label">E- Developer Advisory
+                                Board</label></li>
+                        <li><input type="checkbox" name="cc_management" value="F- Resident Superintendent"><label class="label">F- Resident
+                                Superintendent</label></li>
+                        <li><input type="checkbox" name="cc_management" value="G- No Management"><label class="label">G- No Management</label></li>
+                        <li><input type="checkbox" name="cc_management" value="H- Other (See Remarks"><label class="label">H- Other (See
+                                Remarks)</label></li>
+                    </ul>
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label>Restrictions</label>
+                    <ul class="checkBox ulUnstle">
+                        <li><input type="checkbox" name="cc_restrictions" value="A- Adult Community"><label class="label">A- Adult Community</label></li>
+                        <li><input type="checkbox" name="cc_restrictions" value="C- Rentals"><label class="label">C- Rentals</label></li>
+                        <li><input type="checkbox" name="cc_restrictions" value="D- RV/Boat/Trailer"><label class="label">D- RV/Boat/Trailer</label></li>
+                        <li><input type="checkbox" name="cc_restrictions" value="F- Smoking - In Common Areas "><label class="label">F- Smoking - In Common Areas </label></li>
+                        <li><input type="checkbox" name="cc_restrictions" value="G- Smoking - In Units"><label class="label">G- Smoking - In Units</label></li>
+                        <li><input type="checkbox" name="cc_restrictions" value="E- Other (See Remarks)"><label class="label">E- Other (See Remarks)</label></li> 
+                    </ul>
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label>Documents in Hand </label>
+                    <ul class="checkBox ulUnstle">
+                        <li><input type="checkbox" name="cc_documents_in_hand" value="A- Master Deed "><label class="label">A- Master Deed </label></li>
+                        <li><input type="checkbox" name="cc_documents_in_hand" value="B- Unit Deed"><label class="label">B- Unit Deed</label></li>
+                        <li><input type="checkbox" name="cc_documents_in_hand" value="C- Rules & Regulations"><label class="label">C- Rules & Regulations</label></li>
+                        <li><input type="checkbox" name="cc_documents_in_hand" value="D- Master Plan "><label class="label">D- Master Plan </label></li>
+                        <li><input type="checkbox" name="cc_documents_in_hand" value="E- Management Association Bylaws "><label class="label">E- Management Association Bylaws </label></li>
+                        <li><input type="checkbox" name="cc_documents_in_hand" value="F- Floor Plans"><label class="label">F- Floor Plans</label></li>
+                        <li><input type="checkbox" name="cc_documents_in_hand" value="G- Association Financial Statements"><label class="label">G- Association Financial Statements</label></li>
+                        <li><input type="checkbox" name="cc_documents_in_hand" value="H- Certificate of Insurance"><label class="label">H- Certificate of Insurance</label></li>
+                        <li><input type="checkbox" name="cc_documents_in_hand" value="I- Other (See Remarks"><label class="label">I- Other (See Remarks)</label></li>
+                    </ul> 
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <label class="required">*Style</label>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="cc_style" value="A- Detached"><label class="label">A- Detached</label></li>
+                            <li><input type="checkbox" name="cc_style" value="C- Rowhouse"><label class="label">C- Rowhouse</label></li>
+                            <li><input type="checkbox" name="cc_style" value="D- Garden"><label class="label">D- Garden</label></li>
+                            <li><input type="checkbox" name="cc_style" value="B- Townhouse"><label class="label">B- Townhouse</label></li>
+                            <li><input type="checkbox" name="cc_style" value="E- Half Duplex"><label class="label">E- Half Duplex</label></li>
+                            <li><input type="checkbox" name="cc_style" value="G- Mid-Rise"><label class="label">G- Mid-Rise</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="cc_style" value="F- Hi-Rise"><label class="label">F- Hi-Rise</label></li>
+                            <li><input type="checkbox" name="cc_style" value="H- Low-Rise"><label class="label">H- Low-Rise</label></li>
+                            <li><input type="checkbox" name="cc_style" value="J- Brownstone"><label class="label">J- Brownstone</label></li>
+                            <li><input type="checkbox" name="cc_style" value="K- Courtyard"><label class="label">K- Courtyard</label></li>
+                            <li><input type="checkbox" name="cc_style" value="I- 2/3 Family"><label class="label">I- 2/3 Family</label></li>
+                            <li><input type="checkbox" name="cc_style" value="L- Motel/Cottage/Efficiency"><label class="label">L- Motel/Cottage/Efficiency</label></li>
+                        </ul> 
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="cc_style" value="N- Loft"><label class="label">N- Loft</label></li>
+                            <li><input type="checkbox" name="cc_style" value="O- Attached"><label class="label">O- Attached</label></li>
+                            <li><input type="checkbox" name="cc_style" value="P- Philadelphia"><label class="label">P- Philadelphia</label></li>
+                            <li><input type="checkbox" name="cc_style" value="W- Shingle "><label class="label">W- Shingle </label></li>
+                            <li><input type="checkbox" name="cc_style" value="X- Duplex"><label class="label">X- Duplex</label></li>
+                            <li><input type="checkbox" name="cc_style" value="M- Other (See Remarks)"><label class="label">M- Other (See Remarks)</label></li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-7 col-xs-12">
+                    <div class="form-row">
+                        <div class="form-group col-md-6 col-xs-12">
+                            <label class="required">*Approx. Living Area Total</label>
+                            <div class="Sqft">
+                                <input type="text" name="cc_Living_area_total_style" id="cc_Living_area_total_style" class="form-control">
+                                <p>SqFt</p>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 col-xs-12">
+                            <label class="fieldRq">Approx. Living Area Above Grade</label>
+                            <div class="Sqft">
+                                <input type="text" name="cc_Living_area_above_grade" id="cc_Living_area_above_grade" class="form-control">
+                                <p>SqFt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6 col-xs-12">
+                            <label class="required">*Living Area Includes Below-Grade SqFt</label>
+                            <div class="checkBoxWrap">
+                                <div class="checkBox Approx">
+                                    <input type="checkbox"  name="cc_living_area_includes_below_grade_qFt" value="yes" class="form-control">
+                                    <label class="fieldRq">Yes</label>
+                                </div>
+                                <div class="checkBox Approx">
+                                    <input type="checkbox" name="cc_living_area_includes_below_grade_qFt" value="no" class="form-control">
+                                    <label class="fieldRq">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 col-xs-12">
+                            <label class="fieldRq">Approx. Living Area Below Grade </label>
+                            <div class="Sqft">
+                                <input type="text" name="cc_Living_area_total" id="cc_Living_area_total" class="form-control">
+                                <p>SqFt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-5 col-xs-12">
+                    <label class="fieldRq">Living Area Disclosures <small>(Max. 100 Characters)</small></label>
+                    <textarea name="cc_living_area_disclosures" id="cc_living_area_disclosures" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6 pr-3">
+                    <label class="required">*Living Area Source <small>(choose only one)</small></label>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox ulUnstle">
+                            <li>
+                                <input type="checkbox" id="cc_appraiser_source" name="cc_living_area_source" value="Appraiser">
+                                <label class="fieldRq">Appraiser</label>
+                            </li>
+                            <li>
+                                    <input type="checkbox" id="cc_measured" name="cc_living_area_source" value="Measured">
+                                <label class="fieldRq">Measured</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_owner" name="cc_living_area_source" value="Owner">
+                                <label class="fieldRq">Owner</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox ulUnstle">
+                            <li>
+                                <input type="checkbox" id="cc_public_record_source" name="cc_living_area_source" value="Record">
+                                <label class="fieldRq">Public Record</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_other" name="cc_living_area_source" value="Other">
+                                <label class="fieldRq">Other</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group col-md-6 pl-3">
+                    <label class="label">Green Certified</label>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox ulUnstle">
+                            <li>
+                                <input type="checkbox" id="cc_yes_green_certified" name="cc_green_certified" value="Yes">
+                                <label class="fieldRq">Yes</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_no_green_certified" name="cc_green_certified" value="No">
+                                <label class="fieldRq">No</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_unknown_green_certified" name="cc_green_certified" value="Unknown">
+                                <label class="fieldRq">Unknown</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox ulUnstle">
+                            <li>
+                                <input type="checkbox" id="cc_proposed" name="cc_green_certified" value="Proposed">
+                                <label class="fieldRq">Proposed</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_green_certified" name="cc_green_certified" value="Unspecified">
+                                <label class="fieldRq">Unspecified</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <p class="required">*Green Certification Type</p>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_leed_certified" name="cc_green_certification_type" value="A - Energy Star Home Certified ">
+                                <label class="fieldRq">A - Energy Star Home Certified </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_leed_certified" name="cc_green_certification_type" value="B - LEED Certified">
+                                <label class="fieldRq">B - LEED Certified</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_leed_certified" name="cc_green_certification_type" value="C - National Green Building Standard ">
+                                <label class="fieldRq">C - National Green Building Standard </label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_passive_house_certified" name="cc_green_certification_type" value="E - Passive House Certified">
+                                <label class="fieldRq">E - Passive House Certified</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_deep_energy_retrofit_certified" name="cc_green_certification_type" value="F - Deep Energy Retrofit Certified ">
+                                <label class="fieldRq">F - Deep Energy Retrofit Certified </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_epa_waterSense_certified" name="cc_green_certification_type" value="G - EPA WaterSense Certified ">
+                                <label class="fieldRq">G - EPA WaterSense Certified </label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_epa_indoor_air_plus_certified" name="cc_green_certification_type" value="H - EPA Indoor Air Plus Certified ">
+                                <label class="fieldRq">H - EPA Indoor Air Plus Certified </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_pearl_certification_silver" name="cc_green_certification_type" value="I - Pearl Certification - Silver">
+                                <label class="fieldRq">I - Pearl Certification - Silver</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_pearl_certification_gold" name="cc_green_certification_type" value="J - Pearl Certification - Gold ">
+                                <label class="fieldRq">J - Pearl Certification - Gold </label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_pearl_certification_platinum" name="cc_green_certification_type" value="K - Pearl Certification - Platinum">
+                                <label class="fieldRq">K - Pearl Certification - Platinum</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_other_see_remarks__green_certified" name="cc_green_certification_type" value="D - Georgia">
+                                <label class="fieldRq">D - Georgian</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="checkBoxGroup form-row">
+                <div class="form-group col-md-3 col-xs-12">
+                    <label class="required">*Year Built </label>
+                    <input type="text" name="cc_year_built" id="cc_year_built" class="form-control">
+                </div>
+                <div class="form-group col-md-3 col-xs-12">
+                    <label>Year Converted</label>
+                    <input type="text" name="cc_year_converted" id="cc_year_converted" class="form-control">
+                </div>
+                <div class="form-group col-md-6 col-xs-12">
+                    <label class="required">*Year Built Source <small>(choose only one)</small></label>
+                    <div class="checkBoxWrap">
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_appraiser" name="cc_year_built_source" value="Appraiser">
+                            <label class="fieldRq">Appraiser</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_builder" name="cc_year_built_source" value="Builder">
+                            <label class="fieldRq">Builder</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_Owner" name="cc_year_built_source" value="Owner">
+                            <label class="fieldRq">Owner</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_public_record" name="cc_year_built_source" value="Public Record">
+                            <label class="fieldRq">Public Record</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <p class="required">*Year Built Description </p>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_Actual" name="cc_year_built_description" value="A - Actual">
+                                <label class="fieldRq">A - Actual</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_approximate" name="cc_year_built_description" value="B - Approximate">
+                                <label class="fieldRq">B - Approximate</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_certified_historic" name="cc_year_built_description" value="C - Certified Historic">
+                                <label class="fieldRq">C - Certified Historic</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_renovated_since" name="cc_year_built_description" value="D - Renovated Since ">
+                                <label class="fieldRq">D - Renovated Since </label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_to_be_built" name="cc_year_built_description" value="E - To Be Built">
+                                <label class="fieldRq">E - To Be Built</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_under_construction" name="cc_year_built_description" value="F - Under Construction">
+                                <label class="fieldRq">F - Under Construction</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_unknown_mixed" name="cc_year_built_description" value="G - Unknown/Mixed">
+                                <label class="fieldRq">G - Unknown/Mixed</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_finished_never_occupied" name="cc_year_built_description" value="H - Finished, Never Occupie">
+                                <label class="fieldRq">H - Finished, Never Occupied</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="checkBoxGroup form-row">
+                <div class="form-group col-md-12 col-xs-12">
+                    <p>Area Amenities</p>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_public_transportation" name="cc_area_amenities" value="A - Public Transportation">
+                                <label class="fieldRq">A - Public Transportation</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_shopping" name="cc_area_amenities" value="B - Shopping">
+                                <label class="fieldRq">B - Shopping</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_swimming_pool" name="cc_area_amenities" value="C - Swimming Pool">
+                                <label class="fieldRq">C - Swimming Pool</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_tennis_court_amenities" name="cc_area_amenities" value="D - Tennis Court">
+                                <label class="fieldRq">D - Tennis Court</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_park" name="cc_area_amenities" value="E - Park">
+                                <label class="fieldRq">E - Park</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_walking_jogging_trails" name="cc_area_amenities" value="F - Walking/Jogging Trails">
+                                <label class="fieldRq">F - Walking/Jogging Trails</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_stables" name="cc_area_amenities" value="G - Stables">
+                                <label class="fieldRq">G - Stables</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_golf_course" name="cc_area_amenities" value="H - Golf Course">
+                                <label class="fieldRq">H - Golf Course</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_medical_facility" name="cc_area_amenities" value="I - Medical Facility">
+                                <label class="fieldRq">I - Medical Facility</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_laundromat" name="cc_area_amenities" value="J - Laundromat">
+                                <label class="fieldRq">J - Laundromat</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_bike_path" name="cc_area_amenities" value="L - Bike Path ">
+                                <label class="fieldRq">L - Bike Path </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_conservation_area" name="cc_area_amenities" value="M - Conservation Area">
+                                <label class="fieldRq">M - Conservation Area</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_highway_access" name="cc_area_amenities" value="N - Highway Access ">
+                                <label class="fieldRq">N - Highway Access </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_house_of_worship" name="cc_area_amenities" value="O - House of Worship">
+                                <label class="fieldRq">O - House of Worship</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_marina_waterfront1" name="cc_area_amenities" value="P - Marina">
+                                <label class="fieldRq">P - Marina</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_private_school" name="cc_area_amenities" value="Q - Private School">
+                                <label class="fieldRq">Q - Private School</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_public_school" name="cc_area_amenities" value="R - Public School">
+                                <label class="fieldRq">R - Public School</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_t_station" name="cc_area_amenities" value="S - House of Worship">
+                                <label class="fieldRq">S - House of Worship</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_university" name="cc_area_amenities" value="T - University">
+                                <label class="fieldRq">T - University</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_other_see_remarks_amiites" name="cc_area_amenities" value="K - Other (See Remarks) ">
+                                <label class="fieldRq">K - Other (See Remarks) </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group col-md-5 col-xs-12">
+                    <p class="required">*Waterfront </p>
+                    <div class="checkBoxWrap">
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_yes_waterfront" name="af_waterfront" value="Yes" class="form-check-input">
+                            <label class="fieldRq">Yes</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_no_waterfront" name="af_waterfront" value="No" class="form-check-input">
+                            <label class="fieldRq">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <p>Waterfront Features</p>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_ocean_waterfront_waterfront" name="cc_waterfront_features" value="A - Ocean">
+                                <label class="fieldRq">A - Ocean</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_sound_waterfront_waterfront" name="cc_waterfront_features" value="B - Sound">
+                                <label class="fieldRq">B - Sound</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_lake_waterfront" name="cc_waterfront_features" value="C - Lake">
+                                <label class="fieldRq">C - Lake</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_river_waterfront" name="cc_waterfront_features" value="D - River">
+                                <label class="fieldRq">D - River</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_pond_waterfront" name="cc_waterfront_features" value="E - Pond">
+                                <label class="fieldRq">E - Pond</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_bay_waterfront" name="cc_waterfront_features" value="F - Bay">
+                                <label class="fieldRq">F - Bay</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_harbor_waterfront" name="cc_waterfront_features" value="G - Harbor">
+                                <label class="fieldRq">G - Harbor</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_dock_mooring_waterfront" name="cc_waterfront_features" value="H - Dock/Mooring ">
+                                <label class="fieldRq">H - Dock/Mooring </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_frontage_waterfront" name="cc_waterfront_features" value="I - Frontage">
+                                <label class="fieldRq">I - Frontage</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_walk_to_waterfront" name="cc_waterfront_features" value="J - Walk to">
+                                <label class="fieldRq">J - Walk to</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_access_waterfront" name="cc_waterfront_features" value="L - Access">
+                                <label class="fieldRq">L - Access</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_canal_waterfront" name="cc_waterfront_features" value="N - Canal">
+                                <label class="fieldRq">N - Canal</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_bog_waterfront" name="cc_waterfront_features" value="O - Bog">
+                                <label class="fieldRq">O - Bog</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_creek_waterfronta" name="cc_waterfront_features" value="P - Creek">
+                                <label class="fieldRq">P - Creek</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_deep_water_access" name="cc_waterfront_features" value="Q - Deep Water Access">
+                                <label class="fieldRq">Q - Deep Water Access</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_direct_access_waterfront" name="cc_waterfront_features" value="R - Direct Access">
+                                <label class="fieldRq">R - Direct Access</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_marina_waterfront1" name="cc_waterfront_features" value="S - Marina">
+                                <label class="fieldRq">S - Marina</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_marsh_waterfront" name="cc_waterfront_features" value="T - Marsh">
+                                <label class="fieldRq">T - Marsh</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="cc_navigable" name="cc_waterfront_features" value="U - Navigable">
+                                <label class="fieldRq">U - Navigable</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_public_waterfront1" name="cc_waterfront_features" value="V - Public">
+                                <label class="fieldRq">V - Public</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_private_waterfront1" name="cc_waterfront_features" value="W - Private">
+                                <label class="fieldRq">W - Private</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cc_other_see_remarks_waterfront1" name="cc_waterfront_features" value="M - Other (See Remarks) ">
+                                <label class="fieldRq">M - Other (See Remarks) </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group col-md-12">
+                    <p>Water View </p>
+                    <div class="checkBoxWrap borderDash">
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_yes_waterView" name="cc_water_view" value="Yes" class="form-check-input">
+                            <label class="fieldRq">Yes</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_no_waterView" name="cc_water_view" value="No" class="form-check-input">
+                            <label class="fieldRq">No</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_unknown_waterView" name="cc_water_view" value="Unknown" class="form-check-input">
+                            <label class="fieldRq">Unknown</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_unspecified__waterView" name="cc_water_view" value="Unspecified" class="form-check-input">
+                            <label class="fieldRq">Unspecified</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <p>Water View Features</p>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="cc_water_view_features" value="A - Bay">
+                                <label class="label">A - Bay</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_water_view_features" value="B - Bog">
+                                <label class="label">B - Bog</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_water_view_features" value="C - Canal">
+                                <label class="label">C - Canal</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_water_view_features" value="D - Creek">
+                                <label class="label">D - Creek</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="cc_water_view_features" value="E - Dock/Mooring">
+                                <label class="label">E - Dock/Mooring</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_water_view_features" value="F - Harbor">
+                                <label class="label">F - Harbor</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_water_view_features" value="G - Lake">
+                                <label class="label">G - Lake</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_water_view_features" value="H - Marina">
+                                <label class="label">H - Marina</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="cc_water_view_features" value="I - Marsh">
+                                <label class="label">I - Marsh</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_water_view_features" value="J - Ocean">
+                                <label class="label">J - Ocean</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_water_view_features" value="K - Pond">
+                                <label class="label">K - Pond</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="cc_water_view_features" value="M - Public">
+                                <label class="label">M - Public</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_water_view_features" value="L - Private">
+                                <label class="label">L - Private</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_water_view_features" value="N - River">
+                                <label class="label">N - River</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="cc_water_view_features" value="O - Sound">
+                                <label class="label">O - Sound</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_water_view_features" value="P - Walk to">
+                                <label class="label">P - Walk to</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_water_view_features" value="Q - Other (See Remarks)">
+                                <label class="label">Q - Other (See Remarks)</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="checkBoxGroup form-row">
+                <div class="form-group col-md-4 col-xs-12">
+                    <p class="required">*Beach Nearby</p>
+                    <div class="checkBoxWrap borderDash">
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_yes_beach_nearby" name="cc_beach_nearby" value="yes" class="form-check-input">
+                            <label class="fieldRq">Yes</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_no_beach_nearby" name="cc_beach_nearby" value="no" class="form-check-input">
+                            <label class="fieldRq">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <p>Beach Approximate Miles to </p>
+                    <div class="checkBoxWrap borderDash">
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_mile1" name="cc_beach_approximate_miles_to" value="0 to 1/10 Mile " class="form-check-input">
+                            <label class="fieldRq">0 to 1/10 Mile </label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_mile2" name="cc_beach_approximate_miles_to" value="1/10 to 3/10 Mile" class="form-check-input">
+                            <label class="fieldRq">1/10 to 3/10 Mile</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_mile3" name="cc_beach_approximate_miles_to" value="3/10 to 1/2 Mile" class="form-check-input">
+                            <label class="fieldRq">3/10 to 1/2 Mile</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_mile4" name="cc_beach_approximate_miles_to" value="1/2 to 1 Mile" class="form-check-input">
+                            <label class="fieldRq">1/2 to 1 Mile</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_miles" name="cc_beach_approximate_miles_to" value="1 to 2 Miles" class="form-check-input">
+                            <label class="fieldRq">1 to 2 Miles</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_unknown_beach_nearby" name="cc_beach_approximate_miles_to" value="Unknown" class="form-check-input">
+                            <label class="fieldRq">Unknown</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_unspecified_beach_nearby" name="cc_beach_approximate_miles_to" value="Unspecified" class="form-check-input">
+                            <label class="fieldRq">Unspecified</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <p>Beach Description</p>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="cc_beach_description" value="A- Bay">
+                                <label class="fieldRq">A - Bay</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_beach_description" value="B- Creek">
+                                <label class="fieldRq">B - Creek</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_beach_description" value="C- Harbor">
+                                <label class="fieldRq">C - Harbor</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="cc_beach_description" value="D- Lake/Pond">
+                                <label class="fieldRq">D - Lake/Pond</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_beach_description" value="E- Ocean ">
+                                <label class="fieldRq">E - Ocean</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_beach_description" value="F- River ">
+                                <label class="fieldRq">F - River</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="cc_beach_description" value="H- Access">
+                                <label class="fieldRq">H - Access</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_beach_description" value="I- Direct Access">
+                                <label class="fieldRq">I - Direct Access</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_beach_description" value="J- Frontage">
+                                <label class="fieldRq">J - Frontage</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="cc_beach_description" value="K- Sound">
+                                <label class="fieldRq">K - Sound</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_beach_description" value="L- Walk to">
+                                <label class="fieldRq">L - Walk to</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="cc_beach_description" value="G- Other (See Remarks)">
+                                <label class="fieldRq">G- Other (See Remarks)</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <p>Beach Ownership </p>
+                    <div class="checkBoxWrap borderDash">
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_private_Ownership" name="cc_beach_ownership" value="A - Private" class="form-check-input">
+                            <label class="fieldRq">A - Private</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_public_Ownership" name="cc_beach_ownership" value="B - Public" class="form-check-input">
+                            <label class="fieldRq">B - Public</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_association" name="cc_beach_ownership" value="C - Association" class="form-check-input">
+                            <label class="fieldRq">C - Association</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_deeded_rights" name="cc_beach_ownership" value="D - Deeded Rights" class="form-check-input">
+                            <label class="fieldRq">D - Deeded Rights</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="cc_other_see_remarks_Ownership" name="cc_beach_ownership" value="E - Other (See Remarks)" class="form-check-input">
+                            <label class="fieldRq">E - Other (See Remarks)</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        crossorigin="anonymous"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
