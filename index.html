@@ -4421,20 +4421,20 @@
                     <p>Facing Direction</p>
                     <div class="checkBoxWrap ulCheck">
                         <ul class="checkBox">
-                            <li><input type="checkbox" name="cc_facing_direction" value="Northeast"><label class="lebel">Northeast</label></li>
-                            <li><input type="checkbox" name="cc_facing_direction" value="North"><label class="lebel">North</label></li>
-                            <li><input type="checkbox" name="cc_facing_direction" value="Unknown "><label class="lebel">Unknown </label></li>
-                            <li><input type="checkbox" name="cc_facing_direction" value="South"><label class="lebel">South</label></li>
+                            <li><input type="checkbox" name="cc_facing_direction" value="Northeast"><label class="label">Northeast</label></li>
+                            <li><input type="checkbox" name="cc_facing_direction" value="North"><label class="label">North</label></li>
+                            <li><input type="checkbox" name="cc_facing_direction" value="Unknown "><label class="label">Unknown </label></li>
+                            <li><input type="checkbox" name="cc_facing_direction" value="South"><label class="label">South</label></li>
                         </ul>
                         <ul class="checkBox">
-                            <li><input type="checkbox" name="cc_facing_direction" value="Northwest"><label class="lebel">Northwest</label></li>
-                            <li><input type="checkbox" name="cc_facing_direction" value="Unspecified"><label class="lebel">Unspecified</label></li>
-                            <li><input type="checkbox" name="cc_facing_direction" value="East"><label class="lebel">East</label></li>
+                            <li><input type="checkbox" name="cc_facing_direction" value="Northwest"><label class="label">Northwest</label></li>
+                            <li><input type="checkbox" name="cc_facing_direction" value="Unspecified"><label class="label">Unspecified</label></li>
+                            <li><input type="checkbox" name="cc_facing_direction" value="East"><label class="label">East</label></li>
                         </ul>
                         <ul class="checkBox">
-                            <li><input type="checkbox" name="cc_facing_direction" value="Southeast "><label class="lebel">Southeast </label></li>
-                            <li><input type="checkbox" name="cc_facing_direction" value="West"><label class="lebel">West</label></li>
-                            <li><input type="checkbox" name="cc_facing_direction" value="Southwes"><label class="lebel">Southwest</label></li>
+                            <li><input type="checkbox" name="cc_facing_direction" value="Southeast "><label class="label">Southeast </label></li>
+                            <li><input type="checkbox" name="cc_facing_direction" value="West"><label class="label">West</label></li>
+                            <li><input type="checkbox" name="cc_facing_direction" value="Southwes"><label class="label">Southwest</label></li>
                         </ul>
                     </div>
                     <label class="label">Pets Allowed </label>
@@ -8905,6 +8905,1028 @@
                     <textarea name="mf_disclosures" id="mf_disclosures" class="form-control"></textarea>
                     <p>Exclusions <small>(Max. 100 Characters. Please include an additional page if needed.)</small></p>
                     <textarea name="mf_disclosures" id="mf_disclosures" class="form-control"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="LDwrapper">
+            <h2 class="text-center my-4">LAND LISTING INPUT FORM</h2>
+            <div class="formInput form-row">
+                <div class="col-md-12 form-group col-xs-12">
+                    <label class="required">*List Price</label>
+                    <input type="text" name="ld_list_price" id="ld_list_price" class="form-control">
+                </div>
+                <div class="form-group col-md-6 form-group col-xs-12">
+                    <p class="required">*Compensation Based On</p>
+                    <div class="checkBoxWrap">
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_grossfull_sale_price" name="ld_compensation_based_on"
+                                value="Gross/Full Sale Price" class="form-check-input">
+                            <label class="fieldRq">Gross/Full Sale Price</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_net_ale_rice" name="ld_compensation_based_on" value="Net Sale Price"
+                                class="form-check-input">
+                            <label class="fieldRq">Net Sale Price </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-6 col-xs-12">
+                    <p class="required">*Sub-Agency Relationship Offered </p>
+                    <div class="checkBoxWrap">
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_yes" name="ld_sub_gency_relationship_offered" value="yes"
+                                class="form-check-input">
+                            <label class="fieldRq">Yes</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_no" name="ld_sub_gency_relationship_offered" value="no"
+                                class="form-check-input">
+                            <label class="fieldRq">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label class="required">*Sub-Agent Compensation</label>
+                    <input type="text" name="ld_sub_agent_compensation" id="ld_sub_agent_compensation" class="form-control">
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label class="required">Buyer’s Agent Compensation</label>
+                    <input type="text" name="ld_buyers_agent_compensation" id="ld_buyers_agent_compensation" class="form-control">
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label class="required">*Facilitator Compensation</label>
+                    <input type="text" name="ld_facilitator_compensation" id="ld_facilitator_compensation" class="form-control">
+                </div>
+                <div class="form-group col-md-6 col-xs-12">
+                    <p class="required">*Lender Owned</p>
+                    <div class="checkBoxWrap">
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_yes_lender_owned" name="ld_lender_owned" value="yes">
+                            <label class="fieldRq">Yes</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_no_lender_owned" name="ld_lender_owned" value="no">
+                            <label class="fieldRq">No</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_undisclosed" name="ld_lender_owned" value="Undisclosed">
+                            <label class="fieldRq">Undisclosed</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-6 col-xs-12">
+                    <p class="required">*Short Sale With Lender Approval Required</p>
+                    <div class="checkBoxWrap">
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_yes_lender_approval" name="ld_short_sale_with_lender_approval_required"
+                                value="yes" class="form-check-input">
+                            <label class="fieldRq">Yes</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_lender_approval" name="ld_short_sale_with_lender_approval_required"
+                                value="no" class="form-check-input">
+                            <label class="fieldRq">No</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_unknown_lender_approval"
+                                name="ld_short_sale_with_lender_approval_required" value="Unknown" class="form-check-input">
+                            <label class="fieldRq">Unknown</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-3 col-xs-12">
+                    <label class="required">*Street #</label>
+                    <input type="text" name="ld_street" id="ld_street" class="form-control">
+                </div>
+                <div class="form-group col-md-3 col-xs-12">
+                    <label class="required">*Street Name</label>
+                    <input type="text" name="ld_street_name" id="ld_street_name" class="form-control">
+                </div>
+                <div class="form-group col-md-3 col-xs-12">
+                    <label class="required">*Town</label>
+                    <input type="text" name="ld_town" id="ld_town" class="form-control">
+                </div>
+                <div class="form-group col-md-3 col-xs-12">
+                    <label class="required">*State</label>
+                    <input type="text" name="ld_state" id="ld_state" class="form-control">
+                </div>
+                <div class="form-group col-md-3 col-xs-12">
+                    <label class="required">*Zip Code</label>
+                    <input type="text" name="ld_zip_code" id="ld_zip_code" class="form-control">
+                </div>
+                <div class="form-group col-md-3 col-xs-12">
+                    <label class="label">Grade School <small>(Max. 15 Characters)</small></label>
+                    <input type="text" name="ld_grade_school" id="ld_grade_school" class="form-control">
+                </div>
+                <div class="form-group col-md-3 col-xs-12">
+                    <label class="label">Middle School <small>(Max. 15 Characters)</small></label>
+                    <input type="text" name="ld_middle_school" id="ld_middle_school" class="form-control">
+                </div>
+                <div class="form-group col-md-3 col-xs-12">
+                    <label class="label">High School <small>(Max. 15 Characters)</small></label>
+                    <input type="text" name="ld_high_chool" id="ld_high_chool" class="form-control">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4 col-xs-12">
+                    <label class="required">*Taxes $ </label>
+                    <input type="text" name="ld_taxes" id="ld_taxes" class="form-control">
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label class="required">*Fiscal Year</label>
+                    <input type="text" name="ld_fiscal_year" id="ld_fiscal_year" class="form-control">
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label class="required">*Assessed Value $</label>
+                    <input type="text" name="ld_assessed_value" id="ld_assessed_value" class="form-control">
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label class="required">*Specific Zoning Code</label>
+                    <input type="text" name="ld_specific_zoningcode" id="ld_specific_zoningcode" class="form-control">
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label class="required">*Book</label>
+                    <input type="text" name="ld_book" id="ld_book" class="form-control">
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <label class="required">*Page</label>
+                    <input type="text" name="ld_page" id="ld_page" class="form-control">
+                </div>
+                <div class="form-group col-md-12 form-group col-xs-12">
+                    <label class="required">*Type of CC <small>(choose only one)</small></label>
+                    <ul class="ulFlex">
+                        <li><input type="checkbox" name="ld_type_of_ld" value="Residential"><label class="label">Residential</label></li>
+                        <li><input type="checkbox" name="ld_type_of_ld" value="Agricultural"><label class="label">Agricultural</label></li>
+                        <li><input type="checkbox" name="ld_type_of_ld" value="Commercial"><label class="label">Commercial</label></li>
+                        <li><input type="checkbox" name="ld_type_of_ld" value="Non-Buildable"><label class="label">Non-Buildable</label></li>
+                        <li><input type="checkbox" name="ld_type_of_ld" value="Parking"><label class="label">Parking</label></li>
+                        <li><input type="checkbox" name="ld_type_of_ld" value="Mixed Use"><label class="label">Mixed Use</label></li> 
+                    </ul>
+                </div>
+                <div class="form-group col-md-12 form-group col-xs-12">
+                    <label class="required">*Zone Usage</label>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_zone_usage" value="A- Single Family"><label class="label">A- Single Family</label></li>
+                            <li><input type="checkbox" name="ld_zone_usage" value="B- Multi Family"><label class="label">B- Multi Family</label></li>
+                            <li><input type="checkbox" name="ld_zone_usage" value="C- Condo/Co-op"><label class="label">C- Condo/Co-op</label></li>
+                            <li><input type="checkbox" name="ld_zone_usage" value="E- Agriculture"><label class="label">E- Agriculture</label></li>
+                            <li><input type="checkbox" name="ld_zone_usage" value="G- Commercial"><label class="label">G- Commercial</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_zone_usage" value="F- Cluster"><label class="label">F- Cluster</label></li>
+                            <li><input type="checkbox" name="ld_zone_usage" value="J- Industrial - Light"><label class="label">J- Industrial - Light</label></li>
+                            <li><input type="checkbox" name="ld_zone_usage" value="H- General Business"><label class="label">H- General Business</label></li>
+                            <li><input type="checkbox" name="ld_zone_usage" value="I- Industrial - Heavy"><label class="label">I- Industrial - Heavy</label></li>
+                        </ul>    
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_zone_usage" value="K- Limited Business"><label class="label">K- Limited Business</label></li>
+                            <li><input type="checkbox" name="ld_zone_usage" value="L- Needs Change"><label class="label">L- Needs Change</label></li>
+                            <li><input type="checkbox" name="ld_zone_usage" value="M- Open Space"><label class="label">M- Open Space</label></li>
+                            <li><input type="checkbox" name="ld_zone_usage" value="D- Other (See Remarks)"><label class="label">D- Other (See Remarks)</label></li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6 col-xs-12">
+                    <label class="label"># Lots Approved </label>
+                    <input type="text" name="ld_lots_approved" id="ld_lots_approved" class="form-control">
+                </div>
+                <div class="form-group col-md-6 col-xs-12">
+                    <label class="label">Cable Available </label>
+                    <ul class="ulFlex">
+                        <li><input type="checkbox" name="ld_cable_available" value="yes"><label class="label">yes</label></li>
+                        <li><input type="checkbox" name="ld_cable_available" value="no"><label class="label">no</label></li>
+                        <li><input type="checkbox" name="ld_cable_available" value="Unknown"><label class="label">Unknown</label></li>
+                        <li><input type="checkbox" name="ld_cable_available" value="Unspecified"><label class="label">Unspecified</label></li>
+                    </ul>
+                </div>
+                <div class="form-group col-md-6 col-xs-12">
+                    <label class="label">Perc Test Date</label>
+                    <input type="date" name="ld_perc_test_date" class="w-100 form-control"  value="Perc Test Date">
+                </div>
+                <div class="form-group col-md-6 col-xs-12">
+                    <label class="label">Perc Test</label>
+                    <ul class="ulFlex">
+                        <li><input type="checkbox" name="ld_perc_test" value="yes"><label class="label">yes</label></li>
+                        <li><input type="checkbox" name="ld_perc_test" value="no"><label class="label">no</label></li>
+                        <li><input type="checkbox" name="ld_perc_test" value="Unknown"><label class="label">Unknown</label></li>
+                        <li><input type="checkbox" name="ld_perc_test" value="Unspecified"><label class="label">Unspecified</label></li>
+                    </ul>
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <label class="label">Lot Improvements</label>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_lot_improvements" value="A- Curbs & Gutters"><label class="label">A- Curbs & Gutters</label></li>
+                            <li><input type="checkbox" name="ld_lot_improvements" value="B- Storm Drains "><label class="label">B- Storm Drains </label></li>
+                            <li><input type="checkbox" name="ld_lot_improvements" value="C- Sidewalks "><label class="label">C- Sidewalks </label></li>
+                            <li><input type="checkbox" name="ld_lot_improvements" value="D- Fence "><label class="label">D- Fence </label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_lot_improvements" value="E- Rough Graded "><label class="label">E- Rough Graded </label></li>
+                            <li><input type="checkbox" name="ld_lot_improvements" value="F- Finish Graded"><label class="label">F- Finish Graded</label></li>
+                            <li><input type="checkbox" name="ld_lot_improvements" value="G- Lot Staked"><label class="label">G- Lot Staked</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_lot_improvements" value="H- Shared Drive"><label class="label">H- Shared Drive</label></li>
+                            <li><input type="checkbox" name="ld_lot_improvements" value="J- None"><label class="label">J- None</label></li>
+                            <li><input type="checkbox" name="ld_lot_improvements" value="I- Other (See Remarks)"><label class="label">I- Other (See Remarks)</label></li> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <label class="label">Documents in Hand</label>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="A- Legal Description"><label class="label">A- Legal Description</label></li>
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="B- Perc Test"><label class="label">B- Perc Test</label></li>
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="C- 21E Certificate"><label class="label">C- 21E Certificate</label></li>
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="D- Septic Design"><label class="label">D- Septic Design</label></li>
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="E- Subdivision Approval"><label class="label">E- Subdivision Approval</label></li>
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="F- Building Permit"><label class="label">F- Building Permit</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="G- Land Survey "><label class="label">G- Land Survey </label></li>
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="H- Topographical Map"><label class="label">H- Topographical Map</label></li>
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="I- Order of Conditions"><label class="label">I- Order of Conditions</label></li>
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="J- Restrictive Covenants"><label class="label">J- Restrictive Covenants</label></li>
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="K- Leases"><label class="label">K- Leases</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="L- Environmental Impact Study"><label class="label">L- Environmental Impact Study</label></li>
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="M- Recorded Plat"><label class="label">M- Recorded Plat</label></li>
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="N- Soil Survey"><label class="label">N- Soil Survey</label></li>
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="O- Aerial Photo"><label class="label">O- Aerial Photo</label></li>
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="P- Appraisal"><label class="label">P- Appraisal</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="Q- Blueprints"><label class="label">Q- Blueprints</label></li>
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="R- Drawings"><label class="label">R- Drawings</label></li>
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="S- Brochure"><label class="label">S- Brochure</label></li>
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="U- None"><label class="label">U- None</label></li>
+                            <li><input type="checkbox" name="ld_documents_in_hand" value="T- Other (See Remarks"><label class="label">T- Other (See Remarks</label></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-3 form-group col-xs-12"></p>
+                    <label class="required">*Approximate Lot Size </label>
+                    <div class="Sqft">
+                        <input type="text" name="ld_approximate_lot_size" class="form-control">
+                        <p><small>(Sq. Ft.)</small></p>
+                    </div>
+                </div>
+                <div class="col-md-3 form-group col-xs-12">
+                    <label class="label">Approximate Street Frontage</label>
+                    <input type="text" name="ld_approximate_street_frontage" class="form-control">
+                </div>
+                <div class="col-md-3 form-group col-xs-12">
+                    <label class="label">DEQE/DEP #</label>
+                    <input type="text" name="ld_deqe_dep" class="form-control">
+                </div>
+                <div class="col-md-3 form-group col-xs-12">
+                    <label class="label">Total Approximate Acres</label>
+                    <input type="text" name="ld_total_approximate_acres" class="form-control">
+                </div>
+                <div class="col-md-3 form-group col-xs-12">
+                    <label class="label">Approximate Timber Acres</label>
+                    <input type="text" name="ld_approximate_timber_acres" class="form-control">
+                </div>
+                <div class="col-md-3 form-group col-xs-12">
+                    <label class="label">Approximate Cultivation Acres</label>
+                    <input type="text" name="ld_approximate_cultivation_acres" class="form-control">
+                </div>
+                <div class="col-md-3 form-group col-xs-12">
+                    <label class="label">Approximate Pasture Acres</label>
+                    <input type="text" name="ld_approximate_pasture_acres" class="form-control">
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <label class="required">*Land Description</label>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_land_description" value="A- Underground Storage Tank"><label class="label">A- Underground Storage Tank</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="B- Easements"><label class="label">B- Easements</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="C- Flood Plain"><label class="label">C- Flood Plain</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="D- Level"><label class="label">D- Level</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="E- Rolling"><label class="label">E- Rolling</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="F- Elevated"><label class="label">F- Elevated</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="G- Wetlands"><label class="label">G- Wetlands</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_land_description" value="H- Sloping"><label class="label">H- Sloping</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="I- Wooded"><label class="label">I- Wooded</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="J- Corner"><label class="label">J- Corner</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="K- Stream"><label class="label">K- Stream</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="L- Golf Course Frontage"><label class="label">L- Golf Course Frontage</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="M- Additional Land Available"><label class="label">M- Additional Land Available</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_land_description" value="N- Irregular Lot"><label class="label">N- Irregular Lot</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="P- City View(s)"><label class="label">P- City View(s)</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="Q- Cleared"><label class="label">Q- Cleared</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="R- Farmland"><label class="label">R- Farmland</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="S- Fenced/Enclosed"><label class="label">S- Fenced/Enclosed</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="T- Fill Needed"><label class="label">T- Fill Needed</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_land_description" value="U- Gentle Slope"><label class="label">U- Gentle Slope</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="V- Marsh"><label class="label">V- Marsh</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="W- Steep Slope"><label class="label">W- Steep Slope</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="X- Scenic View(s)"><label class="label">X- Scenic View(s)</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="Y- Zero Lot Line"><label class="label">Y- Zero Lot Line</label></li>
+                            <li><input type="checkbox" name="ld_land_description" value="O- Other (See Remarks"><label class="label">O- Other (See Remarks)</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group col-md-7 col-xs-12">
+                    <label class="label">Home Owner’s Association</label>
+                    <ul class="ulFlex">
+                        <li><input type="checkbox" name="ld_home_owners_association" value="yes"><label class="label">yes</label></li>
+                        <li><input type="checkbox" name="ld_home_owners_association" value="no"><label class="label">no</label></li>
+                        <li><input type="checkbox" name="ld_home_owners_association" value="Unknown"><label class="label">Unknown</label></li>
+                        <li><input type="checkbox" name="ld_home_owners_association" value="Unspecified"><label class="label">Unspecified</label></li>
+                    </ul>
+                </div>
+                <div class="form-group col-md-6 col-xs-12">
+                    <label class="label">Mandatory HOA </label>
+                    <ul class="ulFlex">
+                        <li><input type="checkbox" name="ld_mandatory_hoa" value="yes"><label class="label">yes</label></li>
+                        <li><input type="checkbox" name="ld_mandatory_hoa" value="no"><label class="label">no</label></li>
+                        <li><input type="checkbox" name="ld_mandatory_hoa" value="Unknown"><label class="label">Unknown</label></li>
+                        <li><input type="checkbox" name="ld_mandatory_hoa" value="Unspecified"><label class="label">Unspecified</label></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 form-group col-xs-12">
+                    <label class="label">HOA Fee</label>
+                    <input type="text" name="ld_hoa_fee" class="form-control">
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <p>Area Amenities</p>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_public_transportation" name="ld_area_amenities" value="A - Public Transportation">
+                                <label class="fieldRq">A - Public Transportation</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_shopping" name="ld_area_amenities" value="B - Shopping">
+                                <label class="fieldRq">B - Shopping</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_swimming_pool" name="ld_area_amenities" value="C - Swimming Pool">
+                                <label class="fieldRq">C - Swimming Pool</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_tennis_court_amenities" name="ld_area_amenities" value="D - Tennis Court">
+                                <label class="fieldRq">D - Tennis Court</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_park" name="ld_area_amenities" value="E - Park">
+                                <label class="fieldRq">E - Park</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_walking_jogging_trails" name="ld_area_amenities" value="F - Walking/Jogging Trails">
+                                <label class="fieldRq">F - Walking/Jogging Trails</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_stables" name="ld_area_amenities" value="G - Stables">
+                                <label class="fieldRq">G - Stables</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_golf_course" name="ld_area_amenities" value="H - Golf Course">
+                                <label class="fieldRq">H - Golf Course</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_medical_facility" name="ld_area_amenities" value="I - Medical Facility">
+                                <label class="fieldRq">I - Medical Facility</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_laundromat" name="ld_area_amenities" value="J - Laundromat">
+                                <label class="fieldRq">J - Laundromat</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_bike_path" name="ld_area_amenities" value="L - Bike Path ">
+                                <label class="fieldRq">L - Bike Path </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_conservation_area" name="ld_area_amenities" value="M - Conservation Area">
+                                <label class="fieldRq">M - Conservation Area</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_highway_access" name="ld_area_amenities" value="N - Highway Access ">
+                                <label class="fieldRq">N - Highway Access </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_house_of_worship" name="ld_area_amenities" value="O - House of Worship">
+                                <label class="fieldRq">O - House of Worship</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_marina_waterfront1" name="ld_area_amenities" value="P - Marina">
+                                <label class="fieldRq">P - Marina</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_private_school" name="ld_area_amenities" value="Q - Private School">
+                                <label class="fieldRq">Q - Private School</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_public_school" name="ld_area_amenities" value="R - Public School">
+                                <label class="fieldRq">R - Public School</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_t_station" name="ld_area_amenities" value="S - House of Worship">
+                                <label class="fieldRq">S - House of Worship</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_university" name="ld_area_amenities" value="T - University">
+                                <label class="fieldRq">T - University</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_other_see_remarks_amiites" name="ld_area_amenities" value="K - Other (See Remarks) ">
+                                <label class="fieldRq">K - Other (See Remarks) </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="checkBoxGroup form-row">
+                <div class="form-group col-md-5 col-xs-12">
+                    <p class="required">*Waterfront </p>
+                    <div class="checkBoxWrap">
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_yes_waterfront" name="af_waterfront" value="Yes" class="form-check-input">
+                            <label class="fieldRq">Yes</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_no_waterfront" name="af_waterfront" value="No" class="form-check-input">
+                            <label class="fieldRq">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <p>Waterfront Features</p>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_ocean_waterfront_waterfront" name="ld_waterfront_features" value="A - Ocean">
+                                <label class="fieldRq">A - Ocean</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_sound_waterfront_waterfront" name="ld_waterfront_features" value="B - Sound">
+                                <label class="fieldRq">B - Sound</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_lake_waterfront" name="ld_waterfront_features" value="C - Lake">
+                                <label class="fieldRq">C - Lake</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_river_waterfront" name="ld_waterfront_features" value="D - River">
+                                <label class="fieldRq">D - River</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_pond_waterfront" name="ld_waterfront_features" value="E - Pond">
+                                <label class="fieldRq">E - Pond</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_bay_waterfront" name="ld_waterfront_features" value="F - Bay">
+                                <label class="fieldRq">F - Bay</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_harbor_waterfront" name="ld_waterfront_features" value="G - Harbor">
+                                <label class="fieldRq">G - Harbor</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_dock_mooring_waterfront" name="ld_waterfront_features" value="H - Dock/Mooring ">
+                                <label class="fieldRq">H - Dock/Mooring </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_frontage_waterfront" name="ld_waterfront_features" value="I - Frontage">
+                                <label class="fieldRq">I - Frontage</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_walk_to_waterfront" name="ld_waterfront_features" value="J - Walk to">
+                                <label class="fieldRq">J - Walk to</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_access_waterfront" name="ld_waterfront_features" value="L - Access">
+                                <label class="fieldRq">L - Access</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_canal_waterfront" name="ld_waterfront_features" value="N - Canal">
+                                <label class="fieldRq">N - Canal</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_bog_waterfront" name="ld_waterfront_features" value="O - Bog">
+                                <label class="fieldRq">O - Bog</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_creek_waterfronta" name="ld_waterfront_features" value="P - Creek">
+                                <label class="fieldRq">P - Creek</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_deep_water_access" name="ld_waterfront_features" value="Q - Deep Water Access">
+                                <label class="fieldRq">Q - Deep Water Access</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_direct_access_waterfront" name="ld_waterfront_features" value="R - Direct Access">
+                                <label class="fieldRq">R - Direct Access</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_marina_waterfront1" name="ld_waterfront_features" value="S - Marina">
+                                <label class="fieldRq">S - Marina</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_marsh_waterfront" name="ld_waterfront_features" value="T - Marsh">
+                                <label class="fieldRq">T - Marsh</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_navigable" name="ld_waterfront_features" value="U - Navigable">
+                                <label class="fieldRq">U - Navigable</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_public_waterfront1" name="ld_waterfront_features" value="V - Public">
+                                <label class="fieldRq">V - Public</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_private_waterfront1" name="ld_waterfront_features" value="W - Private">
+                                <label class="fieldRq">W - Private</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_other_see_remarks_waterfront1" name="ld_waterfront_features" value="M - Other (See Remarks) ">
+                                <label class="fieldRq">M - Other (See Remarks) </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group col-md-12">
+                    <p>Water View </p>
+                    <div class="checkBoxWrap borderDash">
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_yes_waterView" name="ld_water_view" value="Yes" class="form-check-input">
+                            <label class="fieldRq">Yes</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_no_waterView" name="ld_water_view" value="No" class="form-check-input">
+                            <label class="fieldRq">No</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_unknown_waterView" name="ld_water_view" value="Unknown" class="form-check-input">
+                            <label class="fieldRq">Unknown</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_unspecified__waterView" name="ld_water_view" value="Unspecified" class="form-check-input">
+                            <label class="fieldRq">Unspecified</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <p>Water View Features</p>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_bay_waterfrontWater_features" name="ld_water_view_features" value="A - Bay">
+                                <label class="fieldRq">A - Bay</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_bog" name="ld_water_view_features" value="B - Bog">
+                                <label class="fieldRq">B - Bog</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_canal" name="ld_water_view_features" value="C - Canal">
+                                <label class="fieldRq">C - Canal</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_creek_features" name="ld_water_view_features" value="D - Creek">
+                                <label class="fieldRq">D - Creek</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_dock_mooring" name="ld_water_view_features" value="E - Dock/Mooring">
+                                <label class="fieldRq">E - Dock/Mooring</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_harbor_waterfront_features" name="ld_water_view_features" value="F - Harbor">
+                                <label class="fieldRq">F - Harbor</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_lake" name="ld_water_view_features" value="G - Lake">
+                                <label class="fieldRq">G - Lake</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_marina_waterfront_features" name="ld_water_view_features" value="H - Marina ">
+                                <label class="fieldRq">H - Marina </label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_marsh_waterfront_features" name="ld_water_view_features" value="I - Marsh">
+                                <label class="fieldRq">I - Marsh</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_ocean_waterfront_waterfront_features" name="ld_water_view_features" value="J - Ocean">
+                                <label class="fieldRq">J - Ocean</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_pond" name="ld_water_view_features" value="K - Pond">
+                                <label class="fieldRq">K - Pond</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_private_waterfront_features" name="ld_water_view_features" value="L - Private">
+                                <label class="fieldRq">L - Private</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_public_waterfront_features" name="ld_water_view_features" value="M - Public">
+                                <label class="fieldRq">M - Public</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_river_features" name="ld_water_view_features" value="N - River">
+                                <label class="fieldRq">N - River</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_sound__features" name="ld_water_view_features" value="O - Sound">
+                                <label class="fieldRq">O - Sound</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_walk_to" name="ld_water_view_features" value="P - Walk to">
+                                <label class="fieldRq">P - Walk to</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_other_see_remarks_features" name="ld_water_view_features" value="Q - Other (See Remarks)">
+                                <label class="fieldRq">Q - Other (See Remarks) </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <p class="required">*Beach Nearby</p>
+                    <div class="checkBoxWrap borderDash">
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_yes_beach_nearby" name="ld_beach_nearby" value="yes" class="form-check-input">
+                            <label class="fieldRq">Yes</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_no_beach_nearby" name="ld_beach_nearby" value="no" class="form-check-input">
+                            <label class="fieldRq">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <p>Beach Approximate Miles to </p>
+                    <div class="checkBoxWrap borderDash">
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_mile1" name="ld_beach_approximate_miles_to" value="0 to 1/10 Mile " class="form-check-input">
+                            <label class="fieldRq">0 to 1/10 Mile </label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_mile2" name="ld_beach_approximate_miles_to" value="1/10 to 3/10 Mile" class="form-check-input">
+                            <label class="fieldRq">1/10 to 3/10 Mile</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_mile3" name="ld_beach_approximate_miles_to" value="3/10 to 1/2 Mile" class="form-check-input">
+                            <label class="fieldRq">3/10 to 1/2 Mile</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_mile4" name="ld_beach_approximate_miles_to" value="1/2 to 1 Mile" class="form-check-input">
+                            <label class="fieldRq">1/2 to 1 Mile</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_miles" name="ld_beach_approximate_miles_to" value="1 to 2 Miles" class="form-check-input">
+                            <label class="fieldRq">1 to 2 Miles</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_unknown_beach_nearby" name="ld_beach_approximate_miles_to" value="Unknown" class="form-check-input">
+                            <label class="fieldRq">Unknown</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_unspecified_beach_nearby" name="ld_beach_approximate_miles_to" value="Unspecified" class="form-check-input">
+                            <label class="fieldRq">Unspecified</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <p>Beach Description</p>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_bay_waterfront_beach_nearby" name="ld_beach_description" value="A - Bay">
+                                <label class="fieldRq">A - Bay</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_creek" name="ld_beach_description" value="B - Creek">
+                                <label class="fieldRq">B - Creek</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_harbor_beach_nearby" name="ld_beach_description" value="C - Harbor">
+                                <label class="fieldRq">C - Harbor</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_lake_pond" name="ld_beach_description" value="D - Lake/Pond">
+                                <label class="fieldRq">D - Lake/Pond</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_ocean_beach_nearby" name="ld_beach_description" value="E - Ocean">
+                                <label class="fieldRq">E - Ocean</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_river" name="ld_beach_description" value="F - River">
+                                <label class="fieldRq">F - River</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_access_beach_nearby" name="ld_beach_description" value="H - Access">
+                                <label class="fieldRq">H - Access</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_direct_access" name="ld_beach_description" value="I - Direct Access">
+                                <label class="fieldRq">I - Direct Access</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_frontage" name="ld_beach_description" value="J - Frontage">
+                                <label class="fieldRq">J - Frontage</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" id="ld_sound_beach_nearby" name="ld_beach_description" value="K - Sound">
+                                <label class="fieldRq">K - Sound</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_walk_toWalk_to" name="ld_beach_description" value="L - Walk to">
+                                <label class="fieldRq">L - Walk to</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ld_other_see_remarks_beach_nearby" name="ld_beach_description" value="G - Rive">
+                                <label class="fieldRq">G - River</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 col-xs-12">
+                    <p>Beach Ownership </p>
+                    <div class="checkBoxWrap borderDash">
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_private_Ownership" name="ld_beach_ownership" value="A - Private" class="form-check-input">
+                            <label class="fieldRq">A - Private</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_public_Ownership" name="ld_beach_ownership" value="B - Public" class="form-check-input">
+                            <label class="fieldRq">B - Public</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_association" name="ld_beach_ownership" value="C - Association" class="form-check-input">
+                            <label class="fieldRq">C - Association</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_deeded_rights" name="ld_beach_ownership" value="D - Deeded Rights" class="form-check-input">
+                            <label class="fieldRq">D - Deeded Rights</label>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" id="ld_other_see_remarks_Ownership" name="ld_beach_ownership" value="E - Other (See Remarks)" class="form-check-input">
+                            <label class="fieldRq">E - Other (See Remarks)</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkBoxGroup form-row">
+                <div class="form-group col-md-12">
+                    <label>Road Type </label>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="ld_road_type" value="A - Public">
+                                <label class="fieldRq">A - Public</label>
+                            </li>
+            
+                            <li>
+                                <input type="checkbox" name="ld_road_type" value="B - Private">
+                                <label class="fieldRq">B - Private</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="ld_road_type" value="C - Paved">
+                                <label class="fieldRq">C - Paved</label>
+                            </li>
+            
+                            <li>
+                                <input type="checkbox" name="ld_road_type" value="D - Unpaved ">
+                                <label class="fieldRq">D - Unpaved </label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="ld_road_type" value="E - Publicly Maintained">
+                                <label class="fieldRq">E - Publicly Maintained</label>
+                            </li>
+            
+                            <li>
+                                <input type="checkbox" name="ld_road_type" value="F - Privately Maintained">
+                                <label class="fieldRq">F - Privately Maintained</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="ld_road_type" value="G - Cul-de-sac">
+                                <label class="fieldRq">G - Cul-de-sac</label>
+                            </li>
+            
+                            <li>
+                                <input type="checkbox" name="ld_road_type" value="H - Dead End ">
+                                <label class="fieldRq">H - Dead End </label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="ld_road_type" value="I - Sidewalk">
+                                <label class="fieldRq">I - Sidewalk</label>
+                            </li>
+            
+                            <li>
+                                <input type="checkbox" name="ld_road_type" value="J - Paper Road">
+                                <label class="fieldRq">J - Paper Road</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <label class="required">*Electric</label>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_electric" value="A- On-Site"><label class="label">A- On-Site</label></li>
+                            <li><input type="checkbox" name="ld_electric" value="B- At Street "><label class="label">B- At Street </label></li>
+                        </ul>
+                        
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_electric" value="C- Nearby "><label class="label">C- Nearby </label></li>
+                            <li><input type="checkbox" name="ld_electric" value="D- Underground"><label class="label">D- Underground</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_electric" value="E- None"><label class="label">E- None</label></li>
+                            <li><input type="checkbox" name="ld_electric" value="F- Other (See Remarks"><label class="label">F- Other (See Remarks)</label></li>
+                        </ul>
+                    </div>
+                    <label class="required">*Sewer</label>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="ld_sewer" value="A- Private">
+                                <label class="label">A- Private</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="ld_sewer" value="B- Public ">
+                                <label class="label">B- Public </label>
+                            </li>
+                        </ul>
+                        
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="ld_sewer" value="C- On-Site ">
+                                <label class="label">C- On-Site </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="ld_sewer" value="D- At Street">
+                                <label class="label">D- At Street</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="ld_sewer" value="E- Nearby">
+                                <label class="label">E- Nearby</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="ld_sewer" value="F- Other (See Remarks)">
+                                <label class="label">F- Other (See Remarks)</label>
+                            </li>
+                        </ul> 
+                    </div>
+                    <label class="required">*Water</label>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="ld_water" value="A- Private">
+                                <label class="label">A- Private</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="ld_water" value="B- Public ">
+                                <label class="label">B- Public </label>
+                            </li>
+                        </ul>
+                        
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="ld_water" value="C- On-Site ">
+                                <label class="label">C- On-Site </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="ld_water" value="D- At Street">
+                                <label class="label">D- At Street</label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="ld_water" value="E- Nearby">
+                                <label class="label">E- Nearby</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="ld_water" value="F- Other (See Remarks)">
+                                <label class="label">F- Other (See Remarks)</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <label class="required">*Gas</label>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="ld_gas" value="A- On-Site">
+                                <label class="label">A- On-Site </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="ld_gas" value="B- At Street">
+                                <label class="label">B- At Street </label>
+                            </li>
+                        </ul>
+                        
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="ld_gas" value="C- Nearby">
+                                <label class="label">C- Nearby </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="ld_gas" value="D- None">
+                                <label class="label">D- None </label>
+                            </li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="checkbox" name="ld_gas" value="E- Other (See Remarks)">
+                                <label class="label">E- Other (See Remarks)</label>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+                <div class="form-group col-md-6 col-xs-12">
+                    <p>Adult Community </p>
+                    <div class="checkBoxWrap ulCheck pr-5">
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_lead_paint" value="yes"><label class="fieldRq">yes</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_lead_paint" value="no"><label class="fieldRq">no</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_lead_paint" value="Unknown"><label class="fieldRq">Unknown</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_lead_paint" value="Unspecified"><label class="fieldRq">Unspecified</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group col-md-4 col-xs-12">
+                    <p class="required">*Seller Disclosure Declaration</p>
+                    <div class="checkBoxWrap ulCheck">
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_seller_disclosure_declaration" value="yes"><label class="fieldRq">yes</label></li>
+                        </ul>
+                        <ul class="checkBox">
+                            <li><input type="checkbox" name="ld_seller_disclosure_declaration" value="no"><label class="fieldRq">no</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group col-md-12col-xs-12">
+                    <label class="fieldRq">Disclosures <small>(Max. 300 Characters. Please include an additional page if needed.)</small></label>
+                    <textarea name="ld_disclosures" id="ld_disclosures" class="form-control"></textarea>
+                    <p class="required mt-3">**REMINDER**</p>
+                    <p>
+                        As stated in the Rules &amp; Regulations Sec 1.0 (e), no broker, agent or agency may be named or identified, nor may any web, e-mail or voicemail address or other
+                        personal form of identification be included, in any section or field of any Property Data Form, except only in “Firm Remarks”, “Team Member”, and “Special Showing
+                        Instructions
+                    </p>
+                    <label class="fieldRq">Public Remarks <small>(Max. 1000 Characters. Please include an additional page if needed.)</small></label>
+                    <textarea name="ld_disclosures" id="ld_disclosures" class="form-control"></textarea>
                 </div>
             </div>
         </div>
